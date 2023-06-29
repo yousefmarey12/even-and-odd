@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'assignment';
-}
+  even: Number[] = []
+  odd: Number[] = []
+  counter: any
+  obj: any
+  changeNumber(inp: any) {
+    this.obj = inp
+    this.counter = setInterval(() => {
+      this.obj.number += 1
+      if (this.obj.number % 2 == 0) {
+        this.even.push(this.obj.number)
+      } 
+      if (inp.number % 2 == 1) {
+        this.odd.push(this.obj.number)
+      } 
+    }, 1000)
+      }
+      
+  }
+ 
+

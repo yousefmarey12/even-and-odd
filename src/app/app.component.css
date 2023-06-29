@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.inner-even, .inner-odd {
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: chocolate;
+    width: 25%;
+}
+
+app-even, app-odd {
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+app-even {
+    background-color: aqua;
+    
+}
+
+app-odd {
+    background-color: darkmagenta;
+}
