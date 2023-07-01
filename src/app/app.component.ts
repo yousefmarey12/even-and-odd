@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +22,15 @@ export class AppComponent {
       } 
     }, 1000)
       }
+
+      resetGame(event: any) {
+        this.even = []
+        this.odd = []
+        console.log(this.even)
+        console.log(event)
+      }
+
+
       
   }
  
