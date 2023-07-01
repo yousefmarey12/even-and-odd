@@ -24,6 +24,11 @@ app-even, app-odd {
     text-align: center;
 }
 
+app-even:hover, app-odd:hover {
+    opacity: 0;
+    transition: all 0.5s linear;    
+}
+
 app-even {
     background-color: aqua;
     
